@@ -42,14 +42,13 @@ $(document).ready(function() {
   });
 
   function displayWeather(city) {
-   var url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city;
-   var token = '&appid=5b7ef2dd4272204b858df6076fe0b94e';
-   var units = '&units=metric';
-   $.get(url + token + units, function(response) {
-     $('#current-temperature').text(response.main.temp);
-   });
+    var url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city;
+    var token = '&appid=5b7ef2dd4272204b858df6076fe0b94e';
+    var units = '&units=metric';
+    $.get(url + token + units, function(response) {
+      $('#current-temperature').text(response.main.temp);
+    });
   };
-
 
 
 
