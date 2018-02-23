@@ -14,7 +14,7 @@ Thermostat.prototype = {
     if (this._temperature === 25 && this._powerSave === true) {
       throw "Maximum temperature with powerSave is 25 degrees";
     }
-     this._temperature += 1;
+    this._temperature += 1;
   },
 
   decrease: function() {
@@ -25,7 +25,7 @@ Thermostat.prototype = {
   },
 
   saverMode: function() {
-    if(this._powerSave === false) {
+    if (this._powerSave === false) {
       this._powerSave = true;
     } else if (this._powerSave === true) {
       this._powerSave = false
@@ -35,10 +35,10 @@ Thermostat.prototype = {
     this._temperature = 20;
   },
 
-  energyUsage: function () {
-    if(this._temperature < 18) {
+  energyUsage: function() {
+    if (this._temperature < 18) {
       return "low-usage";
-    } else if(this._temperature < 25) {
+    } else if (this._temperature < 25) {
       return "medium-usage";
     } else {
       return "high-usage";
