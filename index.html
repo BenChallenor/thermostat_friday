@@ -8,20 +8,15 @@
 <script src="src/thermostat.js"></script>
 <script src="js/jquery.js"></script>
 <script src="src/interface.js"></script>
-<!-- <script src="styles.css"></script> -->
-
-
-
 
 <body>
-  <h1>My Thermostat</h1>
+  <div class="header"><img src="images/weather-thermometer-hot-Therm.gif" height="100"></div>
+  <div class="puppy"><img src="images/source.gif"></div>
   <div class="things">
 
-    <div class="onething">
-      <button id="temperature-reset">reset</button>
+    <div class="buttonthing">
+      <button class="button" id="temperature-reset">reset</button>
     </div>
-
-
 
     <div class="onething">
       <form id="select-city">
@@ -30,40 +25,32 @@
       </form>
     </div>
 
-    <div class="onething">
+    <div class="threething">
       City Temperature: <span id="current-temperature">20</span>
     </div>
 
-
-
-
-
-    <div class="onething">
-      <button id="temperature-down">-</button>
+    <div class="buttonthing">
+      <button class="button" id="temperature-down">-</button>
     </div>
 
     <div class="twothing">
       <span id="temperature"></span>
     </div>
 
-    <div class="onething">
-      <button id="temperature-up">+</button>
+    <div class="buttonthing">
+      <button class="button" id="temperature-up">+</button>
     </div>
 
-
-
-
-
-    <div class="onething">
-      <button id="powersaving-on">PSM on</button>
+    <div class="buttonthing">
+      <button class="button" id="powersaving-on">PSM on</button>
     </div>
 
-    <div class="onething">
+    <div class="eightthing">
       power saving mode is <span id="power-saving-status">on</span>
     </div>
 
-    <div class="onething">
-      <button id="powersaving-off">PSM off</button>
+    <div class="buttonthing">
+      <button class="button" id="powersaving-off">PSM off</button>
     </div>
 
   </div>

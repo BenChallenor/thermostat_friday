@@ -1,35 +1,105 @@
-.things {
+body {
+  background-image: url("images/giphy.gif");
+  }
+
+  .header {
+  margin: auto;
+  height: 25px;
+  width: 60%;
+  border: 3px;
+  padding: 10px;
+  text-align: center;
+}
+
+  .things {
   margin-top: 10em;
   width: 80%;
   margin-left: 10%;
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-row-gap: 0.3em;
   grid-column-gap: 0.3em;
 }
 
 .onething{
+  font-family: Papyrus, fantasy;
   text-align: center;
   height: 6em;
-  background-color: red;
+  background-color: transparent;
 }
 
 .twothing{
+  font-size: 30px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   text-align: center;
-  height: 6em;
-  background-color: pink;
+  height: 3em;
+  background-color: transparent;
+  color: yellow;
 }
 
+.threething{
+  font-size: 12px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  text-align: center;
+  height: 6em;
+  background-image: url("images/ahhhh.gif");
+}
 
+.eightthing{
+  font-family: Papyrus, fantasy;
+  color: yellow;
+  font-size: 30px;
+  text-align: center;
+  height: 3em;
+  background-color: transparent;
+}
+
+.buttonthing{
+  text-align: center;
+  height: 6em;
+  background-color: transparent;
+}
 
 .low-usage {
   color: green;
 }
 
 .medium-usage {
-  color: black;
+  color: yellow;
 }
 
 .high-usage {
   color: red;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.puppy {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -93px;
+
 }
